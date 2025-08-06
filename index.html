@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>صفحتي الأولى</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #333;
+    }
+    p {
+      font-size: 18px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #0099cc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0077aa;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>أهلاً بيك في صفحتي الأولى!</h1>
+  <p>دي صفحة بسيطة معمولة بـ HTML.</p>
+  <button onclick="alert('شكراً لزيارتك!')">اضغط هنا</button>
+
+
+</body>
+<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+<script type="module">
+import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+createChat({
+webhookUrl: 'https://n8n.srv898484.hstgr.cloud/webhook/d80d1905-ef85-4593-99df-68219a0530e5/chat'
+});
+</script>
+</html>
